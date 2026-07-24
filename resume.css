@@ -147,7 +147,7 @@ a:hover {
 
 .cv-photo {
   flex-shrink: 0;
-  width: min(32vw, 220px);
+  width: min(32vw, 260px);
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--cv-line);
@@ -159,7 +159,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 28% 18%;
+  object-position: 38% 18%;
 }
 
 .cv-label {
