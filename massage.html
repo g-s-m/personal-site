@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Профессиональный массаж — восстановление тела и душевного равновесия">
+  <title>Сергей Гоменюк — Массажист</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav-brand">
+        <a href="index.html" class="logo">Сергей Гоменюк</a>
+        <a href="resume.html" class="yin-yang" title="На главную" aria-label="На главную">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#2c2825"/>
+            <path d="M32 2a30 30 0 0 1 0 60 15 15 0 0 1 0-30 15 15 0 0 0 0-30Z" fill="#faf8f5"/>
+            <circle cx="32" cy="17" r="5.5" fill="#faf8f5"/>
+            <circle cx="32" cy="47" r="7" fill="#2c2825"/>
+          </svg>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#education">Образование</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <p class="hero-label">Сертифицированный массажист</p>
+        <h1>Забота о вашем теле<br>и внутреннем балансе</h1>
+        <p class="hero-text">Индивидуальный подход, проверенные техники и атмосфера полного расслабления</p>
+        <a href="#contacts" class="btn btn-primary">Записаться на сеанс</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="images/photo2.png" alt="Сергей Гоменюк — массажист" width="480" height="600">
+          </div>
+          <div class="photo-accent" aria-hidden="true"></div>
+        </div>
+        <div class="about-content">
+          <span class="section-label">Обо мне</span>
+          <h2>Сергей Гоменюк</h2>
+          <p class="lead">Помогаю людям снимать напряжение, восстанавливать подвижность и чувствовать лёгкость в теле.</p>
+          <p>Я верю, что массаж — это не просто работа с мышцами, а целостный подход к здоровью. Каждый сеанс я подбираю индивидуально: учитываю ваш образ жизни, особенности тела и то, что именно вас беспокоит.</p>
+          <p>В кабинете царит спокойная атмосфера, полное внимание к вам. Моя задача — чтобы вы ушли не только с расслабленными мышцами, но и с ощущением гармонии.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Образование</span>
+          <h2>Квалификация и сертификаты</h2>
+          <p class="section-desc">Постоянно повышаю квалификацию и осваиваю новые техники для лучшего результата</p>
+        </div>
+        <div class="education-grid">
+          <article class="edu-card">
+            <h3>Институт остеопатии и метавитоники профессора Э.М. Нейматова</h3>
+            <ul class="edu-courses">
+              <li>Основы метавитоники</li>
+              <li>Осцилляционный подход в метамассаже</li>
+            </ul>
+          </article>
+          <article class="edu-card">
+            <h3>Школа массажа Станислава Чернонога</h3>
+            <ul class="edu-courses">
+              <li>Матрица массажа</li>
+            </ul>
+          </article>
+          <article class="edu-card">
+            <h3>Учебный центр «Мастер Поинт»</h3>
+            <ul class="edu-courses">
+              <li>Классический массаж</li>
+              <li>Спортивный массаж</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="certificates">
+          <h3 class="certificates-title">Сертификаты</h3>
+          <p class="certificates-desc">Нажмите на изображение, чтобы увеличить</p>
+          <div class="certificates-grid">
+            <button class="cert-item" type="button" aria-label="Сертификат: Основы метавитоники">
+              <img src="images/certificates/01-metavitonika.jpg" alt="Сертификат — Основы метавитоники" loading="lazy">
+              <span>Основы метавитоники</span>
+            </button>
+            <button class="cert-item" type="button" aria-label="Сертификат: Осцилляционный подход в метамассаже">
+              <img src="images/certificates/02-oscillyaciya.jpg" alt="Сертификат — Осцилляционный подход в метамассаже" loading="lazy">
+              <span>Осцилляционный подход</span>
+            </button>
+            <button class="cert-item" type="button" aria-label="Сертификат: Матрица массажа">
+              <img src="images/certificates/03-matrica.png" alt="Сертификат — Матрица массажа" loading="lazy">
+              <span>Матрица массажа</span>
+            </button>
+            <button class="cert-item" type="button" aria-label="Сертификат: Классический массаж">
+              <img src="images/certificates/06-klassika-cert.jpg" alt="Сертификат — Классический массаж" loading="lazy">
+              <span>Классический массаж</span>
+            </button>
+            <button class="cert-item" type="button" aria-label="Сертификат: Спортивный массаж">
+              <img src="images/certificates/05-sportivnyy.jpg" alt="Сертификат — Спортивный массаж" loading="lazy">
+              <span>Спортивный массаж</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Услуги</span>
+          <h2>Виды массажа</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-item">
+            <h3>Комплексное восстановление</h3>
+            <span class="service-duration">90 минут</span>
+            <p class="service-desc">Глубокая проработка всех зон</p>
+            <span class="price">6 000 ₽</span>
+          </article>
+          <article class="service-item">
+            <h3>Восстановительный массаж</h3>
+            <span class="service-duration">60 минут</span>
+            <p class="service-desc">Мягкие мануальные техники</p>
+            <span class="price">4 000 ₽</span>
+          </article>
+          <article class="service-item">
+            <h3>Курс «Баланс тела»</h3>
+            <span class="service-duration">серия × 60 минут</span>
+            <p class="service-desc">Первый сеанс — диагностический массаж всего тела, далее каждый сеанс с акцентом на отдельную зону</p>
+            <span class="price">4 000 ₽ / сеанс</span>
+          </article>
+          <article class="service-item">
+            <h3>Здоровая кожа</h3>
+            <span class="service-duration">60 минут</span>
+            <p class="service-desc">Улучшение тонуса кожи</p>
+            <span class="price">4 000 ₽</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <div class="container contacts-grid">
+        <div class="contacts-info">
+          <span class="section-label">Контакты</span>
+          <h2>Запишитесь на сеанс</h2>
+          <p>Буду рад ответить на ваши вопросы и подобрать удобное время для визита.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Телефон</strong>
+                <a href="tel:+79267628585">+7 (926) 762-85-85</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:s.gomenyuk@gmail.com">s.gomenyuk@gmail.com.ru</a>
+              </div>
+            </li>
+            <!--li>
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Адрес</strong>
+                <span>г. Москва, ул. Примерная, д. 10, каб. 5</span>
+              </div>
+            </li-->
+            <li>
+              <span class="contact-icon" aria-hidden="true">🕐</span>
+              <div>
+                <strong>Режим работы</strong>
+                <span>Пн–Сб: 10:00 – 20:00</span>
+              </div>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="https://t.me/gsm_33" target="_blank" rel="noopener noreferrer" aria-label="Telegram">Telegram</a>
+            <a href="https://wa.me/79267628588" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+            <a href="https://max.ru/u/f9LHodD0cOLOVUGIRUEJkd5_rGd2I27pXBakTg8RYIOOFuZh4iMITXsRNAY" target="_blank" rel="noopener noreferrer" aria-label="MAX">MAX</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Оставить заявку</h3>
+          <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required placeholder="Как к вам обращаться?">
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" placeholder="Удобное время, вид массажа..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Отправить заявку</button>
+          <p class="form-note form-note--success" id="formNote" hidden>Спасибо! Я свяжусь с вами в ближайшее время.</p>
+          <p class="form-note form-note--error" id="formError" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Сергей Гоменюк. Все права защищены.</p>
+      <a href="resume.html" class="other-side">Хотите узнать меня с другой стороны?</a>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

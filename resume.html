@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sergey Gomenyuk — Software Engineer. Backend, cryptography, FHE, blockchain, cloud infrastructure.">
+  <title>Sergey Gomenyuk — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resume.css?v=8">
+</head>
+<body class="resume-page">
+  <header class="cv-header">
+    <div class="container cv-header-inner">
+      <a href="index.html" class="cv-back other-side">← Home</a>
+      <a href="massage.html" class="yin-yang" title="Home" aria-label="Home">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#0f1115"/>
+          <path d="M32 2a30 30 0 0 1 0 60 15 15 0 0 1 0-30 15 15 0 0 0 0-30Z" fill="#e8eaef"/>
+          <circle cx="32" cy="17" r="5.5" fill="#e8eaef"/>
+          <circle cx="32" cy="47" r="7" fill="#0f1115"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/" class="cv-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="cv-hero">
+      <div class="container cv-hero-grid">
+        <div class="cv-hero-text">
+          <p class="cv-label">Software Engineer</p>
+          <h1>Sergey Gomenyuk</h1>
+          <p class="cv-location">Moscow, Russia</p>
+          <p class="cv-summary">
+            Software engineer with 15+ years of experience spanning embedded systems, compilers,
+            backend services, cloud infrastructure, and applied cryptography.
+            Recently focused on fully homomorphic encryption (FHE), zero-knowledge proofs,
+            and blockchain platforms — while keeping a strong foundation in C++, Go, Kubernetes, and AWS.
+          </p>
+          <ul class="cv-skills">
+            <li>C++</li>
+            <li>Golang</li>
+            <li>FHE</li>
+            <li>OpenFHE</li>
+            <li>Lattigo</li>
+            <li>ZK / Circom</li>
+            <li>Cosmos SDK</li>
+            <li>Kubernetes</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>CI/CD</li>
+            <li>gRPC</li>
+            <li>Kafka</li>
+            <li>MongoDB</li>
+            <li>RabbitMQ</li>
+            <li>AuthN / AuthZ</li>
+            <li>SIEM</li>
+            <li>ONNX</li>
+          </ul>
+        </div>
+        <div class="cv-photo">
+          <img
+            src="images/photo-resume.png"
+            alt="Sergey Gomenyuk"
+            width="320"
+            height="400"
+            decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="container">
+        <h2 class="cv-section-title">Experience</h2>
+        <div class="cv-timeline">
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">Fair Math, Inc</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Software Engineer</span>
+                  <span class="cv-job-dates">May 2024 — Present</span>
+                  <span class="cv-job-duration">2 yrs 3 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>
+                    Responsible for all technical decisions in the company — from architecture and
+                    technology choices to delivery processes and tooling
+                  </li>
+                  <li>
+                    Introduced CI/CD for <a href="https://fherma.io" target="_blank" rel="noopener noreferrer">FHERMA</a>,
+                    an FHE challenges platform; migrated the entire company deployment stack to Kubernetes;
+                    designed and built verification agents that check user solutions, including auto-scaling;
+                    extended verification to support multiple FHE libraries
+                    (OpenFHE, Lattigo, Apple Swift Homomorphic Encryption)
+                  </li>
+                  <li>
+                    Developed a Cosmos SDK–based blockchain for an FHE computer platform.
+                    Key milestone: ran a neural network trained on CIFAR-10 entirely in FHE mode —
+                    encrypted image as input, encrypted class label as output, with all inference
+                    performed on ciphertext without decryption
+                  </li>
+                  <li>
+                    Built an FHE runtime for ONNX models —
+                    <a href="https://github.com/fairmath/onnx-fhe-runtime" target="_blank" rel="noopener noreferrer">onnx-fhe-runtime</a> —
+                    enabling encrypted evaluation of ONNX computation graphs
+                  </li>
+                  <li>
+                    Implemented a proxy that connects Cosmos-based networks to Blockscout explorers —
+                    <a href="https://github.com/fairmath/shuttle" target="_blank" rel="noopener noreferrer">shuttle</a>
+                  </li>
+                  <li>
+                    Prototyped private payments for Ethereum based on Pedersen commitments
+                    and zero-knowledge circuits written in Circom
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">BI.ZONE</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Software Engineer</span>
+                  <span class="cv-job-dates">Nov 2023 — May 2024</span>
+                  <span class="cv-job-duration">7 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>
+                    Worked on a next-generation SIEM platform — collection, processing, and enrichment of security events
+                  </li>
+                  <li>
+                    Designed and implemented a log collector capable of ingesting data from local files,
+                    syslog streams, and Windows Event Log
+                  </li>
+                  <li>
+                    Integrated the SIEM collector with the company’s EDR product,
+                    enabling a unified pipeline from endpoint telemetry to security analytics
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">Wheely</h3>
+            <p class="cv-company-loc">Moscow, Russia</p>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Backend Engineer</span>
+                  <span class="cv-job-dates">Mar 2021 — Nov 2023</span>
+                  <span class="cv-job-duration">2 yrs 9 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>
+                    Designed and implemented end-to-end encryption for trip history,
+                    so passenger ride data stays protected both at rest and in transit
+                  </li>
+                  <li>
+                    Tech lead for a full redesign of authentication and authorization:
+                    owned the architecture, planning, and rollout across backend services —
+                    from threat model and API design to migration and production delivery
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">Align Technology</h3>
+            <p class="cv-company-loc">Moscow, Russia · 3 years total</p>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Software Engineering Manager</span>
+                  <span class="cv-job-dates">Jan 2020 — Mar 2021</span>
+                  <span class="cv-job-duration">1 yr 3 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>
+                    Led a team through porting a production backend application from Windows to Linux,
+                    including build, packaging, and operational readiness
+                  </li>
+                  <li>
+                    Led delivery of a new AWS-based service for generating orthodontic treatment plans —
+                    from initial design through production launch
+                  </li>
+                  <li>
+                    Partnered with the architecture team to design a joint canary release process
+                    for the backend service and desktop application, so both sides could roll out safely together
+                  </li>
+                </ul>
+              </div>
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Senior Software Engineer</span>
+                  <span class="cv-job-dates">Apr 2018 — Jan 2020</span>
+                  <span class="cv-job-duration">1 yr 10 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>Shipped multiple new features for the desktop application used by clinicians</li>
+                  <li>
+                    Extended the backend to support building several treatment plans in a single workflow
+                  </li>
+                  <li>
+                    Refactored a core backend service to support new product lines without breaking existing clients
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">HP</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Software Engineer</span>
+                  <span class="cv-job-dates">Jul 2016 — Mar 2018</span>
+                  <span class="cv-job-duration">1 yr 9 mos</span>
+                </div>
+                <p class="cv-job-note">
+                  Cloud 3D scanning system and shoe recommendation platform —
+                  from platform architecture to packaging and continuous delivery.
+                </p>
+                <ul class="cv-bullets">
+                  <li>Contributed to development and architecture of the cloud platform</li>
+                  <li>
+                    Owned deployment and infrastructure work: Jenkins CI pipelines,
+                    Conan.io server for C++ packages, and related packaging workflows
+                  </li>
+                  <li>Built and published C++ packages for the internal Conan.io ecosystem</li>
+                </ul>
+                <p class="cv-tech">Go, C++, gRPC, Docker, Kubernetes, AWS, Tarantool, Kafka</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">Acronis</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">Senior Software Engineer</span>
+                  <span class="cv-job-dates">Apr 2016 — Jul 2016</span>
+                  <span class="cv-job-duration">4 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>
+                    Backup and Recovery team — developed and supported the server side of the
+                    Backup and Recovery product, focusing on reliability and maintainability of core services
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">JSC InfoTeCS</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">C++ Software Engineer</span>
+                  <span class="cv-job-dates">Dec 2012 — Apr 2016</span>
+                  <span class="cv-job-duration">3 yrs 5 mos</span>
+                </div>
+                <ul class="cv-bullets">
+                  <li>
+                    Developed and supported ViPNet Client — a security client for VPN and network protection
+                  </li>
+                  <li>Led and participated in large-scale refactoring to improve code quality and extensibility</li>
+                  <li>Developed Windows kernel-mode drivers for the product stack</li>
+                  <li>
+                    Built a customized Windows credential provider for tailored authentication flows
+                  </li>
+                </ul>
+                <p class="cv-tech">C++, CORBA, gtest, gmock</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">SMWare</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">C/C++ Software Engineer</span>
+                  <span class="cv-job-dates">Jun 2011 — Dec 2012</span>
+                  <span class="cv-job-duration">1 yr 7 mos</span>
+                </div>
+                <p class="cv-job-note">Optimizing compiler for C/C++</p>
+                <ul class="cv-bullets">
+                  <li>Implemented auto-parallelization of loops to exploit multi-core CPUs</li>
+                  <li>Worked on interprocedural analysis passes</li>
+                  <li>
+                    Contributed to inline optimization, localization of global variables,
+                    and variable propagation
+                  </li>
+                </ul>
+                <p class="cv-job-note">JIT binary translator</p>
+                <ul class="cv-bullets">
+                  <li>Implemented machine-dependent optimizations for the translated code</li>
+                  <li>Performed performance analysis to guide and validate optimization work</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="cv-company-block">
+            <h3 class="cv-company-name">Electrondesign</h3>
+            <div class="cv-roles">
+              <div class="cv-role">
+                <div class="cv-job-meta">
+                  <span class="cv-role-title">C/C++ Developer</span>
+                  <span class="cv-job-dates">Sep 2007 — Jun 2011</span>
+                  <span class="cv-job-duration">3 yrs 10 mos</span>
+                </div>
+                <p class="cv-job-note">
+                  Embedded software for AVR, ARM, and DSP platforms —
+                  firmwares and companion tools for digital devices.
+                </p>
+                <ul class="cv-bullets">
+                  <li>Developed software for accounting production resources</li>
+                  <li>Built a GPS tracker with Google Maps visualization</li>
+                  <li>Created tooling for amplitude-frequency (AF) analysis of electrical circuits</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section cv-section--alt">
+      <div class="container">
+        <h2 class="cv-section-title">Education</h2>
+        <article class="cv-edu">
+          <h3>Bauman Moscow State Technical University</h3>
+          <p class="cv-edu-degree">Master's degree, Information Technology</p>
+          <p class="cv-edu-dates">2004 — 2010</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cv-footer">
+    <div class="container cv-footer-inner">
+      <p>And I also do massage.</p>
+      <a href="massage.html" class="cv-cta other-side">Want to get to know me from another side?</a>
+    </div>
+  </footer>
+</body>
+</html>

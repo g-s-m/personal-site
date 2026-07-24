@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сергей Гоменюк — массажист и software engineer">
+  <title>Сергей Гоменюк</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body class="portal">
+  <div class="portal-bg" aria-hidden="true">
+    <div class="portal-orb portal-orb--1"></div>
+    <div class="portal-orb portal-orb--2"></div>
+    <div class="portal-orb portal-orb--3"></div>
+  </div>
+
+  <main class="portal-main">
+    <p class="portal-name">Sergey Gomenyuk</p>
+    <p class="portal-hint">Выберите сторону</p>
+
+    <div class="taiji" role="group" aria-label="Выбор пути">
+      <svg class="taiji-svg" viewBox="0 0 200 200">
+        <defs>
+          <clipPath id="taiji-clip">
+            <circle cx="100" cy="100" r="96"/>
+          </clipPath>
+        </defs>
+
+        <g clip-path="url(#taiji-clip)">
+          <!--
+            Чёрный цвет — один сплошной круг-база.
+            Так «голова» капли не рисуется отдельным path и не даёт другой оттенок.
+          -->
+          <circle cx="100" cy="100" r="96" fill="#1a1816"/>
+
+          <!-- Белая половина поверх базы → резюме -->
+          <a class="taiji-half taiji-yang" href="resume.html" aria-label="Ян — Разработка">
+            <path
+              d="M100 4
+                 A96 96 0 0 1 100 196
+                 A48 48 0 0 1 100 100
+                 A48 48 0 0 0 100 4Z"
+              fill="#f4f0ea"/>
+            <circle cx="100" cy="148" r="12" fill="#1a1816"/>
+          </a>
+
+          <!--
+            Чёрная капля = круг ∖ ян (fill-rule: evenodd).
+            Так контур совпадает с видимым чёрным и не захватывает
+            нижний чёрный «глаз» ян (иначе drop-shadow даёт «попу»).
+          -->
+          <a class="taiji-half taiji-yin" href="massage.html" aria-label="Инь — Массаж">
+            <path
+              class="taiji-hit"
+              fill-rule="evenodd"
+              d="M100 4
+                 A96 96 0 1 1 100 196
+                 A96 96 0 1 1 100 4Z
+                 M100 4
+                 A96 96 0 0 1 100 196
+                 A48 48 0 0 1 100 100
+                 A48 48 0 0 0 100 4Z"
+              fill="#1a1816"/>
+            <circle cx="100" cy="52" r="12" fill="#f4f0ea"/>
+          </a>
+        </g>
+
+        <circle class="taiji-ring" cx="100" cy="100" r="97" fill="none"/>
+      </svg>
+  </main>
+</body>
+</html>
