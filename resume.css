@@ -140,12 +140,13 @@ a:hover {
 
 .cv-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 40px 48px;
   align-items: start;
 }
 
 .cv-photo {
+  order: -1;
   flex-shrink: 0;
   width: min(32vw, 260px);
   border-radius: 12px;
@@ -159,7 +160,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 38% 18%;
+  object-position: 0% 18%;
 }
 
 .cv-label {
@@ -190,10 +191,11 @@ a:hover {
   font-size: 1.05rem;
   color: var(--cv-muted);
   max-width: 640px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .cv-skills {
+  grid-column: 1 / -1;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -405,7 +407,6 @@ a:hover {
 
   .cv-photo {
     width: min(56vw, 180px);
-    order: -1;
   }
 }
 
