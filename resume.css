@@ -356,6 +356,19 @@ a:hover {
   margin-top: 8px;
 }
 
+/* Publications */
+.cv-pub-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cv-pub-list a {
+  font-weight: 500;
+  line-height: 1.45;
+}
+
 /* Education */
 .cv-edu h3 {
   font-size: 1.2rem;
