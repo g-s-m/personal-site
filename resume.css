@@ -184,7 +184,27 @@ a:hover {
 .cv-location {
   font-size: 0.95rem;
   color: var(--cv-muted);
+  margin-bottom: 12px;
+}
+
+.cv-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  list-style: none;
   margin-bottom: 28px;
+  font-family: var(--cv-mono);
+  font-size: 0.85rem;
+}
+
+.cv-contacts a {
+  color: var(--cv-muted);
+  font-weight: 500;
+}
+
+.cv-contacts a:hover {
+  color: var(--cv-accent);
+  opacity: 1;
 }
 
 .cv-summary {
