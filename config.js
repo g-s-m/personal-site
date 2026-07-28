@@ -1,5 +1,3 @@
-// Настройки формы заявки
-// Укажите ваш email — на него будут приходить заявки с сайта
 const FORM_CONFIG = {
-  email: 's.gomenyuk@gmail.com', // например: 'sergey@example.com'
+  accessKey: '59187e43-8363-48f7-bb14-7e2a802aae0b', 
 };

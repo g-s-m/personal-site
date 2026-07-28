@@ -35,14 +35,14 @@ if (contactForm) {
     e.preventDefault();
     hideFormMessages();
 
-    const email = typeof FORM_CONFIG !== 'undefined' ? FORM_CONFIG.email : '';
-    if (!email) {
-      showFormMessage('error', 'Форма не настроена. Укажите email в файле config.js');
+    const accessKey = typeof FORM_CONFIG !== 'undefined' ? FORM_CONFIG.accessKey : '';
+    if (!accessKey) {
+      showFormMessage('error', 'Форма не настроена. Укажите accessKey в файле config.js');
       return;
     }
 
     const formData = new FormData(contactForm);
-    if (formData.get('_honey')) return;
+    if (formData.get('botcheck')) return;
 
     const name = formData.get('name');
     const phone = formData.get('phone');
@@ -54,23 +54,26 @@ if (contactForm) {
     }
 
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(email)}`, {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
         body: JSON.stringify({
+          access_key: accessKey,
           name,
           phone,
           message,
-          _subject: 'Новая заявка с сайта — массаж',
-          _template: 'table',
-          _captcha: 'false',
+          subject: 'Новая заявка с сайта — массаж',
+          from_name: 'Сайт массажа',
         }),
       });
 
-      if (!response.ok) throw new Error('Ошибка отправки');
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result.success === false) {
+        throw new Error(result.message || 'Ошибка отправки');
+      }
 
       contactForm.reset();
       showFormMessage('success');
